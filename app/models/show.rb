@@ -1,6 +1,7 @@
 class Show < ActiveRecord::Base
 
   def self.highest_rating
+    # can use symbol *or* "" for colum_name
     self.maximum(:rating)
   end
 
@@ -9,7 +10,6 @@ class Show < ActiveRecord::Base
   end
 
   def self.lowest_rating
-    # can use symbol *or* "" for colum_name
     self.minimum(:rating)
   end
 
