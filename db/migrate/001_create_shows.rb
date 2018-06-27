@@ -1,8 +1,5 @@
 class CreateShows < ActiveRecord::Migration[4.2]
 
-# The table should have name, network, day, and rating columns. name, network,
-# and day have a datatype of string, and rating has a datatype of integer.
-
   def change
     create_table :shows do |t|
       t.string :name
